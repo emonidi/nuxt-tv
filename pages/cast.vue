@@ -22,6 +22,7 @@
       })
     },
     mounted () {
+      if (!window.cast) return
       window.cast.framework.CastContext.getInstance().setOptions({
         receiverApplicationId: 'F3AC4145',
         autoJoinPolicy: window.chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED

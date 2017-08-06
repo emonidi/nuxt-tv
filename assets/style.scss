@@ -1,0 +1,33 @@
+main, .with.top-toolbar main{
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+}
+
+.content{
+    padding:0px !important;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.video-wrapper{
+        display: flex;
+        flex-grow: 1;
+        flex:1;
+        background: #fff;
+}
+
+    .video-js{
+            display: flex !important;
+            flex-grow: 1 !important;
+            flex:1 !important;
+            align-self: center;
+            transition:.2s;
+            background: #fff !important;
+        }
+
+    video{
+        background: #fff !important;
+    }
+   

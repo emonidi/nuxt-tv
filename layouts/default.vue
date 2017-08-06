@@ -6,9 +6,6 @@
         <nuxt-link to="/">BGTV</nuxt-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <!--<v-btn icon dark router @click.native="toggleCastSession()">-->
-      <!--<v-icon>cast</v-icon>-->
-      <!--</v-btn>-->
       <v-btn icon dark router nuxt to="/cast">
         <v-icon>cast</v-icon>
       </v-btn>

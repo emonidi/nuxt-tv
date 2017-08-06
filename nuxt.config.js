@@ -5,7 +5,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'starter',
+    title: 'BGTV - Българска телевизия на живо от мобилният ти телефон.с',
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
@@ -14,11 +14,14 @@ module.exports = {
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
       {rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic"'},
-      {rel: 'stylesheet', href: '//fonts.googleapis.com/icon?family=Material+Icons'}
+      {rel: 'stylesheet', href: '//fonts.googleapis.com/icon?family=Material+Icons'},
+      {href:"https://vjs.zencdn.net/6.2.4/video-js.css",rel:"stylesheet"}
     ],
     script: [
       {src: 'https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1'},
-      {src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', async: true}
+      {src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'},
+      {src: 'https://vjs.zencdn.net/6.2.4/video.js'},
+      {src: "https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.8.2/videojs-contrib-hls.min.js"},
     ]
   },
   /*
@@ -26,7 +29,7 @@ module.exports = {
    */
   css: [
     '~/node_modules/vuetify/dist/vuetify.min.css',
-    '~/node_modules/video.js/dist/video-js.css'
+    'assets/style.scss'
   ],
   loading: {color: '#3B8070'},
   /*

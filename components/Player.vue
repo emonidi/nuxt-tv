@@ -12,7 +12,6 @@
     mounted () {
       this.video = this.$refs.video
       this.hls = new Hls()
-      console.log(this.props)
 //      console.log(this.hls)
 //      console.log(this.props)
 //      this.$refs.video.play()

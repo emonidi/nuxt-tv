@@ -38,7 +38,6 @@
     asyncData ({store, params}) {
       axios.get('https://bgtvbackend-airpong.rhcloud.com/stations').then(function (res) {
         // store.commit('setChannelList', res.data)
-        console.log(res.data.channels)
         return {
           channelInfo: res.data.channels
         }

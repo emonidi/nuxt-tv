@@ -10,6 +10,7 @@
     props: ['url'],
     url: null,
     mounted () {
+      if (!window.cast) return
       window.cast.framework.CastContext.getInstance().setOptions({
         receiverApplicationId: window.chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID,
         autoJoinPolicy: window.chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED
@@ -17,6 +18,7 @@
     },
     methods: {
       startCast: (url) => {
+        if (!window.cast) return
         var player = new window.cast.framework.RemotePlayer()
         var playerController = new window.cast.framework.RemotePlayerController(player)
 
